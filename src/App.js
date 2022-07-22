@@ -1,15 +1,17 @@
 
 import './App.css';
-import text , {Prova}from './components/scene/scene';
+import Text from './components/scene/scene';
 
 function App() {
 
   
   return(
-    <div>
-      <Prova/>
-      {text}
-    </div>
+    <>
+      <Text param = {0} ></Text>
+      <Text param = {1} ></Text>
+      <Text param = {2} ></Text>
+      <Text param = {3} ></Text> 
+    </>
   )
 }
 
