@@ -10,5 +10,4 @@ const adventure =[
 
 const Text = props => <div><p>{adventure[props.param]}</p></div>
  
-
 export default Text; 
