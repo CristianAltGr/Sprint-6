@@ -1,5 +1,6 @@
 import React,{useState,useEffect} from "react";
 import './App.css';
+import { adventure } from "./components/scene/scene";
 import Text from './components/scene/scene';
 import { Buttons } from "./components/scene/styles";
 import Button from './components/scene/button';
@@ -26,7 +27,7 @@ function App() {
   useEffect(() => {
     
     switch(count){
-      case 0: setCond0(true); setCond1(false); setCond2(false); setCond3(false);
+      case 0: setCond0(true); setCond1(false); setCond2(false); setCond3(false); 
         break;
       case 1: setCond0(false); setCond1(true); setCond2(false); setCond3(false);
         break;
@@ -40,7 +41,7 @@ function App() {
 
   return(
     <>
-      <GlobalStyle/>
+      <GlobalStyle bg = {adventure[count].img}/>
       <Welcome/>
       <Buttons>
         <Button text="Anterior" onClick= {reduce}></Button>

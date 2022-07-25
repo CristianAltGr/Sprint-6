@@ -1,26 +1,30 @@
 import styled, { createGlobalStyle } from "styled-components"
 
-
 export const GlobalStyle = createGlobalStyle`
     *{
         margin:0;
         padding : 0;
+        font-family: monospace;
+        
+        body {
+          background-image: url( ${({bg})=> bg});
+          background-size: cover;
+        }
     }
 `
-
+   
 export const Card = styled.div`
-
-position: absolute;
-	
+    
+    position: absolute;
 	width: 100%;
 	height: 100%;
+    margin-top: -2em;
 	display: flex;
     flex-direction:column;
 	gap: 40px;
 	justify-content: center;
 	background: #61ee97;
-	
-	
+		
 	h1 {
         font-size: 4em;
 		text-align: center;
