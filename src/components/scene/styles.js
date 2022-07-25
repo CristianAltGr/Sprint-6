@@ -8,6 +8,40 @@ export const GlobalStyle = createGlobalStyle`
     }
 `
 
+export const Card = styled.div`
+
+position: absolute;
+	
+	width: 100%;
+	height: 100%;
+	display: flex;
+    flex-direction:column;
+	gap: 40px;
+	justify-content: center;
+	background: #61ee97;
+	
+	
+	h1 {
+        font-size: 4em;
+		text-align: center;
+	}
+	
+	button {
+        margin-left:auto;
+        margin-right: auto;
+        width: 100vh;
+		padding: 2rem;
+		font-size: 1.8rem;
+        border-radius: 80px;
+
+        :hover{
+            background-color: #eff16e;
+            font-size: 3rem;
+            transition: 1s;
+        }
+	}
+`
+
 const Container = styled.div`
     
     display: flex;

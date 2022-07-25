@@ -4,22 +4,23 @@ import Text from './components/scene/scene';
 import { Buttons } from "./components/scene/styles";
 import Button from './components/scene/button';
 import { GlobalStyle } from "./components/scene/styles";
+import Welcome from "./components/Welcome";
 
 
 function App() {
 
-  const [count,setCount] =useState(0)
-  const [cond0,setCond0] =useState(true)
-  const [cond1,setCond1] =useState(false)
-  const [cond2,setCond2] =useState(false)
-  const [cond3,setCond3] =useState(false)
+  const [count,setCount] =useState(0);
+  const [cond0,setCond0] =useState(true);
+  const [cond1,setCond1] =useState(false);
+  const [cond2,setCond2] =useState(false);
+  const [cond3,setCond3] =useState(false);
   
   const reduce = () =>{
-    count > 0 ? setCount(count-1) : alert("L'historia tot comença!")
+    count > 0 ? setCount(count-1) : alert("L'historia tot comença!");
   }
 
   const plus = () => {
-    count < 3 ? setCount(count+1) : alert("L'historia ha acabat!") 
+    count < 3 ? setCount(count+1) : alert("L'historia ha acabat!"); 
   }
 
   useEffect(() => {
@@ -40,7 +41,7 @@ function App() {
   return(
     <>
       <GlobalStyle/>
-      <p>El estado es : {count}</p>
+      <Welcome/>
       <Buttons>
         <Button text="Anterior" onClick= {reduce}></Button>
         <Button text="Següent"  onClick= {plus}></Button>
