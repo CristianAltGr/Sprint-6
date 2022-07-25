@@ -1,4 +1,5 @@
 import React from "react";
+import Container from "./styles";
 
 const adventure =[
     "El nostre heroi estava surant per l'espai sideral quan a la llunyania va albirar una nau espacial",
@@ -8,6 +9,6 @@ const adventure =[
   ];
 
 
-const Text = props => <div><p>{adventure[props.param]}</p></div>
+const Text = props => <Container><p>{adventure[props.param]}</p></Container>
  
 export default Text; 
